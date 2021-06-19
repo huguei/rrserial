@@ -1,0 +1,29 @@
+Index: trunk/lib/Net/DNS/Parameters.pm
+===================================================================
+--- trunk/lib/Net/DNS/Parameters.pm	(revision 1840)
++++ trunk/lib/Net/DNS/Parameters.pm	(working copy)
+@@ -208,6 +208,7 @@
+ 	'CLIENT-TAG'	 => 16,					# draft-bellis-dnsop-edns-tags
+ 	'SERVER-TAG'	 => 17,					# draft-bellis-dnsop-edns-tags
+ 	DEVICEID	 => 26946,				# https://docs.umbrella.com/developer/networkdevices-api/identifying-dns-traffic2
++	RRSERIAL    => 65024,           # Temporary, draft-ietf-dnsop-rrserial
+ 	);
+ our %ednsoptionbyval = reverse @ednsoptionbyname;
+ push @ednsoptionbyname, map { /^\d/ ? $_ : lc($_) } @ednsoptionbyname;
+Index: trunk/lib/Net/DNS/RR/OPT.pm
+===================================================================
+--- trunk/lib/Net/DNS/RR/OPT.pm	(revision 1840)
++++ trunk/lib/Net/DNS/RR/OPT.pm	(working copy)
+@@ -390,6 +390,12 @@
+ }
+ 
+ 
++package Net::DNS::RR::OPT::RRSERIAL;
++
++sub _decompose {
++        my @payload = ( 'SOA-SERIAL' => unpack('N*', $_[1]) );
++}
++
+ 1;
+ __END__
+ 
