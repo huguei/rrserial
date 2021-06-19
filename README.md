@@ -39,9 +39,9 @@ For comments and questions please use the [DNSOP WG mailing list](https://mailar
   more information [in an article from @bortzmeyer](https://www.bortzmeyer.org/edns-option.html) (in French).
 
 - Perl script test:<br>
-    https://github.com/huguei/rrserial/tests/test-rrserial.pl (with plain Net::DNS)<br>
-    https://github.com/huguei/rrserial/tests/test-rrserial-patched-dns-net.pl (over a patched Net::DNS)
+    https://github.com/huguei/rrserial/blob/main/tests/test-rrserial.pl (with plain Net::DNS)<br>
+    https://github.com/huguei/rrserial/blob/main/tests/test-rrserial-patched-dns-net.pl (over a patched Net::DNS)
 
 - Unofficial perl Net::DNS patch:<br>
-    https://github.com/huguei/rrserial/perl-Net-DNS/net-dns.patch
+    https://github.com/huguei/rrserial/tree/main/perl-Net-DNS
 
