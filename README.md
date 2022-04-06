@@ -11,8 +11,8 @@ _PLEASE NOTE_: all code is using a temporary EDNS code for RRSERIAL (65024). Rem
 
 Official documentation, draft being worked on IETF DNSOP working group.
 
-- HTML version 00 (last version on 2021-06-19):<br>
-    https://www.ietf.org/archive/id/draft-ietf-dnsop-rrserial-00.html
+- HTML version 01 (last version on 2022-04-06):<br>
+    https://www.ietf.org/archive/id/draft-ietf-dnsop-rrserial-01.html
 
 - Last version in IETF datatracker:<br>
     https://datatracker.ietf.org/doc/draft-ietf-dnsop-rrserial/
@@ -24,7 +24,7 @@ For comments and questions please use the [DNSOP WG mailing list](https://mailar
 
 - Live authoritative DNS server with a patched NSD: **200.1.122.30**
 
-  Zones: dateserial.example.com and dateserial.example.com with MX, TXT and AAAA apex records.
+  Zones: dateserial.example.com and incserial.example.com with MX, TXT and AAAA apex records.
 
 - Unofficial NSD with RRSERIAL patches:<br> 
     https://github.com/huguei/nsd/tree/rrserial
