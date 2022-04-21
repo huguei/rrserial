@@ -1,21 +1,28 @@
-# RRSERIAL
+# ZONEVERSION (was: RRSERIAL)
 
-RRSERIAL is a new DNS extension (EDNS option) for retrieving, along with
-a DNS answer, the SOA serial of the zone.
+ZONEVERSION is a new DNS extension (EDNS option) for retrieving, along
+with a DNS answer, a token with the zone version that corresponds with
+the answer. There could be several meanings for "the version of a zone",
+one of it being "the SOA serial number", which is the initial defined
+as SOA-SERIAL.
+
+This extension allows for new meanings of "the version of a zone"
+besides SOA-SERIAL, which must be registered in a "flag registry"
+and specified in separate future documents.
 
 This page contains Documentation, scripts and software for developers.
 
-_PLEASE NOTE_: all code is using a temporary EDNS code for RRSERIAL (65024). Remember to change it to the official code from IANA once the RFC is published.
+_PLEASE NOTE_: all code is using a temporary EDNS code for ZONEVERSION (65024). Remember to change it to the official code from IANA once the RFC is published.
 
 ## Protocol changes
 
 Official documentation, draft being worked on IETF DNSOP working group.
 
-- HTML version 01 (last version on 2022-04-06):<br>
-    https://www.ietf.org/archive/id/draft-ietf-dnsop-rrserial-01.html
+- HTML version 00 (last version on 2022-04-21):<br>
+    https://www.ietf.org/archive/id/draft-ietf-dnsop-zoneversion-00.html
 
 - Last version in IETF datatracker:<br>
-    https://datatracker.ietf.org/doc/draft-ietf-dnsop-rrserial/
+    https://datatracker.ietf.org/doc/draft-ietf-dnsop-zoneversion/
 
 For comments and questions please use the [DNSOP WG mailing list](https://mailarchive.ietf.org/arch/browse/dnsop/).
 
