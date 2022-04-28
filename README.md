@@ -49,6 +49,6 @@ For comments and questions please use the [DNSOP WG mailing list](https://mailar
     https://github.com/huguei/rrserial/blob/main/tests/test-rrserial.pl (with plain Net::DNS)<br>
     https://github.com/huguei/rrserial/blob/main/tests/test-rrserial-patched-dns-net.pl (over a patched Net::DNS)
 
-- Unofficial perl Net::DNS patch:<br>
-    https://github.com/huguei/rrserial/tree/main/perl-Net-DNS
+- Unofficial perl Net::DNS git clone:<br>
+    https://github.com/huguei/Net-DNS/tree/zoneversion
 

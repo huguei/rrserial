@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# Prototype script for EDNS option RRSERIAL towards a patched
+# Prototype script for EDNS option ZONEVERSION towards a patched
 # NSD server, using a patched Net::DNS version, for early
 # implementation tests.
 #
@@ -29,11 +29,11 @@ my $resolver = Net::DNS::Resolver->new(
 );
 
 my $query = Net::DNS::Packet->new( $qname, $qtype, 'IN' );
-$query->edns->option( 'RRSERIAL', '' );
+$query->edns->option( 'ZONEVERSION', '' );
 
 my $reply = $resolver->send( $query );
 
-my %data = $reply->edns->option('RRSERIAL');
+my %data = $reply->edns->option('ZONEVERSION');
 say 'RCODE:    ', $reply->header->rcode;
 say 'RRSERIAL: ', $data{'SOA-SERIAL'};
 foreach my $ans ($reply->answer) {
