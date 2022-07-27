@@ -39,6 +39,9 @@ For comments and questions please use the [DNSOP WG mailing list](https://mailar
 - Unofficial dig command with +rrserial EDNS option:<br>
     https://gitlab.isc.org/huguei/bind9/-/tree/rrserial
 
+- **Drink** includes native zoneversion support (experimental authoritative name server):<br>
+    https://framagit.org/bortzmeyer/drink
+
 - Python and Go test scripts:<br>
     https://www.bortzmeyer.org/files/test-rrserial.py<br>
     https://www.bortzmeyer.org/files/test-rrserial.go
