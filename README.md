@@ -18,8 +18,8 @@ _PLEASE NOTE_: all code is using a temporary EDNS code for ZONEVERSION (65024). 
 
 Official documentation, draft being worked on IETF DNSOP working group.
 
-- HTML version 00 (last version on 2022-04-21):<br>
-    https://www.ietf.org/archive/id/draft-ietf-dnsop-zoneversion-00.html
+- HTML version 01 (last version on 2022-09-13):<br>
+    https://www.ietf.org/archive/id/draft-ietf-dnsop-zoneversion-01.html
 
 - Last version in IETF datatracker:<br>
     https://datatracker.ietf.org/doc/draft-ietf-dnsop-zoneversion/
