@@ -3,7 +3,7 @@
 ZONEVERSION is a new DNS extension (EDNS option) for retrieving, along
 with a DNS answer, a token with the zone version that corresponds with
 the answer. There could be several meanings for "the version of a zone",
-one of it being "the SOA serial number", which is the initial defined
+one of it being "the SOA serial number", which is initially defined
 as SOA-SERIAL.
 
 This extension allows for new meanings of "the version of a zone"
@@ -18,8 +18,8 @@ _PLEASE NOTE_: all code is using a temporary EDNS code for ZONEVERSION (65024). 
 
 Official documentation, draft being worked on IETF DNSOP working group.
 
-- HTML version 01 (last version on 2022-09-13):<br>
-    https://www.ietf.org/archive/id/draft-ietf-dnsop-zoneversion-01.html
+- HTML version 03 (last version on 2023-07-30):<br>
+    https://www.ietf.org/archive/id/draft-ietf-dnsop-zoneversion-03.html
 
 - Last version in IETF datatracker:<br>
     https://datatracker.ietf.org/doc/draft-ietf-dnsop-zoneversion/
@@ -33,10 +33,10 @@ For comments and questions please use the [DNSOP WG mailing list](https://mailar
 
   Zones: dateserial.example.com and incserial.example.com with MX, TXT and AAAA apex records.
 
-- Unofficial NSD with RRSERIAL patches:<br> 
+- Unofficial NSD with ZONEVERSION patches:<br> 
     https://github.com/huguei/nsd/tree/rrserial
 
-- Unofficial dig command with +rrserial EDNS option:<br>
+- Unofficial dig command with +zoneversion EDNS option:<br>
     https://gitlab.isc.org/huguei/bind9/-/tree/rrserial
 
 - **Drink** includes native zoneversion support (experimental authoritative name server):<br>
