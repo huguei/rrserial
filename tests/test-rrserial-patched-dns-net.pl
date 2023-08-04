@@ -34,9 +34,10 @@ $query->edns->option( 'ZONEVERSION', '' );
 my $reply = $resolver->send( $query );
 
 my %data = $reply->edns->option('ZONEVERSION');
-say 'RCODE:    ', $reply->header->rcode;
-say 'RRSERIAL: ', $data{'SOA-SERIAL'};
+say 'RCODE:      ', $reply->header->rcode;
+say 'RRSERIAL:   ', $data{'SOA-SERIAL'};
+say 'LABELCOUNT: ', $data{'LABELCOUNT'};
 foreach my $ans ($reply->answer) {
-    say 'ANSWER:   ', $ans->string;
+    say 'ANSWER:     ', $ans->string;
 }
 

@@ -34,11 +34,13 @@ $query->edns->option( $OPT_RRSERIAL, '' );
 
 my $reply = $resolver->send( $query );
 
-my %data = $reply->edns->option($OPT_RRSERIAL);
-say 'RCODE:    ', $reply->header->rcode;
-my ($flag, $len, $rrserial) = unpack('cnN*', $data{'OPTION-DATA'}) if defined($data{'OPTION-DATA'});
-say 'RRSERIAL: ', (defined($rrserial) ? $rrserial : 'undefined');
+my $data = $reply->edns->option($OPT_RRSERIAL);
+say 'RCODE:      ', $reply->header->rcode;
+my ($labelcount, $type, $rrserial) = unpack('ccN*', $data) if defined($data);
+die 'Zoneversion type undefined, only SOA-SERIAL supported' unless $type == 0;
+say 'RRSERIAL:   ', (defined($rrserial) ? $rrserial : 'undefined');
+say 'LABELCOUNT: ', (defined($labelcount) ? $labelcount : 'undefined');
 foreach my $ans ($reply->answer) {
-    say 'ANSWER:   ', $ans->string;
+    say 'ANSWER:     ', $ans->string;
 }
 
