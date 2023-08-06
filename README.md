@@ -18,8 +18,8 @@ _PLEASE NOTE_: all code is using a temporary EDNS code for ZONEVERSION (65024). 
 
 Official documentation, draft being worked on IETF DNSOP working group.
 
-- HTML version 03 (last version on 2023-07-30):<br>
-    https://www.ietf.org/archive/id/draft-ietf-dnsop-zoneversion-03.html
+- HTML version 03 (last version on 2023-08-03):<br>
+    https://www.ietf.org/archive/id/draft-ietf-dnsop-zoneversion-04.html
 
 - Last version in IETF datatracker:<br>
     https://datatracker.ietf.org/doc/draft-ietf-dnsop-zoneversion/
@@ -33,7 +33,7 @@ For comments and questions please use the [DNSOP WG mailing list](https://mailar
 
   Zones: dateserial.example.com and incserial.example.com with MX, TXT and AAAA apex records.
 
-- Unofficial NSD with ZONEVERSION patches:<br> 
+- Unofficial NSD authoritative DNS server implementation with ZONEVERSION patches:<br> 
     https://github.com/huguei/nsd/tree/rrserial
 
 - Unofficial dig command with +zoneversion EDNS option:<br>
@@ -42,7 +42,7 @@ For comments and questions please use the [DNSOP WG mailing list](https://mailar
 - **Drink** includes native zoneversion support (experimental authoritative name server):<br>
     https://framagit.org/bortzmeyer/drink
 
-- Python and Go test scripts:<br>
+- Python and Go test scripts: (<i>Please notice this scripts and blog post are from a previous version. Don't work with last -04 version</i>)<br>
     https://www.bortzmeyer.org/files/test-rrserial.py<br>
     https://www.bortzmeyer.org/files/test-rrserial.go
 
